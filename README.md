@@ -1,2 +1,2 @@
 # PortfolioSAE204
- A portfolio hosted on GitHub for a school project
+ A portfolio hosted on Vercel for a school project
