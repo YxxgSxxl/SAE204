@@ -1,3 +1,4 @@
+/* INIT */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 * {
@@ -36,6 +37,7 @@ h1 {
     font-weight: 500;
 }
 
+/* HEADER */
 .header-flex {
     display: flex;
     align-items: center;
@@ -64,4 +66,10 @@ h1 {
 .nav-socials a img {
     width: 40px;
     height: auto;
+}
+
+/* INDEX */
+section.index {
+    max-height: 100vh;
+    background-color: beige;
 }
