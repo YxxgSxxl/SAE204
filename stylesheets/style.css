@@ -14,7 +14,7 @@ body {
 
 header {
     width: 100%;
-    position: fixed;
+    position: sticky;
     font-weight: 400;
     padding: 30px 50px 30px 50px;
     top: 0;
@@ -70,6 +70,12 @@ h1 {
 
 /* INDEX */
 section.index {
-    max-height: 100vh;
-    background-color: beige;
+    min-height: 100vh;
+    background-color: rgb(27, 27, 27);
+}
+
+/* ABOUT */
+section.about {
+    min-height: 100vh;
+    background-color: rgb(169, 89, 150);
 }
