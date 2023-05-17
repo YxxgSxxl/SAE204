@@ -55,3 +55,8 @@ h1 {
 .nav-item {
     font-size: 30px;
 }
+
+.nav-socials a img {
+    width: 50px;
+    height: auto;
+}
