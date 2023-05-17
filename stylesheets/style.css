@@ -16,7 +16,6 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
     background: url(../img/bg-dark.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -46,6 +45,22 @@ a {
 
 h1 {
     font-weight: 500;
+}
+
+/* BACKGROUND VIDEO */
+.back-vid {
+    width: 100%;
+    height: 100vh;
+    opacity: 60%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
 }
 
 /* HEADER */
@@ -82,11 +97,11 @@ h1 {
 /* INDEX */
 section.index {
     min-height: 100vh;
-    background-color: transparent;
+    background-color: black;
 }
 
 /* ABOUT */
 section.about {
     min-height: 100vh;
-    background-color: rgb(169, 89, 150);
+    background-color: transparent;
 }
