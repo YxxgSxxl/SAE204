@@ -7,9 +7,20 @@
     padding: 0;
 }
 
+body,
+html {
+    scrollbar-color: rgb(22, 22, 22) rgb(69, 67, 67);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: black;
+    background: url(../img/bg-dark.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
