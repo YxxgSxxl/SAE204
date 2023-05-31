@@ -16,7 +16,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: url(../img/bg-dark.jpg);
+    background: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -51,11 +51,11 @@ h1 {
 .back-vid {
     width: 100%;
     height: 100vh;
-    opacity: 100%;
+    opacity: 85%;
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 0;
+    z-index: -1;
     padding: 0 5%;
     display: flex;
     justify-content: center;
@@ -69,6 +69,7 @@ h1 {
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .nav-logo {
@@ -97,8 +98,64 @@ h1 {
 /* INDEX */
 section.index {
     min-height: 100vh;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%, rgba(14,17,17, 1) 100%);
+}
+
+.index-welcome {
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+}
+
+/* Glowing Text */
+span.glowtext {
+    margin-top: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-shadow:
+        0 0 2px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px aliceblue,
+        0 0 30px aliceblue,
+        0 0 40px aliceblue,
+        0 0 50px aliceblue;
+    animation: blink 1.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% {}
+
+    100% {
+        text-shadow:
+            0 0 2px #ffffff,
+            0 0 10px #ffffff,
+            0 0 20px #ffffff,
+            0 0 40px aliceblue,
+            0 0 70px aliceblue,
+            0 0 80px aliceblue;
+    }
+}
+
+/* CV Download Button */
+button.download-cv {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: aliceblue;
+    cursor: pointer;
+    border-color: rgb(77, 68, 241);
+    margin-top: 5%;
+}
+
+button.download-cv a {
+    display: block;
+    color: white;
+    text-decoration: none;
 }
 
 /* ABOUT */
