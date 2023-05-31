@@ -69,6 +69,7 @@ h1 {
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .nav-logo {
@@ -99,6 +100,14 @@ section.index {
     min-height: 100vh;
     background: rgb(2, 0, 36);
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%, rgba(14,17,17, 1) 100%);
+    background-image: url("");
+}
+
+.index-welcome {
+    color: aliceblue;
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
 }
 
 /* ABOUT */
