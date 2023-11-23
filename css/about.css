@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Kusanagi";
+    src: url(fonts/Kusanagi.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+}
+
+h1 {
+    font-family: "Kusanagi";
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* SHOWING THE PAGE WITH A SCALE TRANSFORM */
+.page_show {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    width: 600px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+
+    transform: scale(0);
+    transition: ease 1s;
+    transition-delay: 1s;
+    z-index: 2;
+}
+
+.show {
+    transform: scale(1);
+}
+
+/* GRID DISPLAY AND ITEMS */
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 100px;
+  grid-template-rows: auto auto  10px; 
+  column-gap: 10px;
+
+  text-align: center;
+  align-items: center;
+}
+
+.item1 {
+  background-color: blueviolet;
+  color: #000000;
+}
+
+.item2 {
+  background-color: aquamarine;
+  color: #000000;
+}
+
+.item3 {
+  background-color: chartreuse;
+  color: #000000;
+}
+
+.item4 {
+  background-color: firebrick;
+  color: #000000;
+}

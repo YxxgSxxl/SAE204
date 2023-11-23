@@ -1,0 +1,140 @@
+/* INIT */
+@font-face {
+    font-family: "Kusanagi";
+    src: url(fonts/Kusanagi.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    overflow: auto;
+}
+
+h1 {
+    font-family: "Kusanagi";
+    font-size: 35px;
+    margin-bottom: 2%;
+}
+
+.hgroup {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 1%;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+
+    padding-left: 100px;
+    padding-right: 550px;
+}
+
+main div {
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    margin-bottom: 1%;
+}
+
+p {
+    margin-bottom: 1%;
+}
+
+
+
+/* BACK BUTTON */
+.backButton {
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+/* WRAPPER FOR SAE */
+.sae-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0px 100px 0px 100px;
+}
+
+.titreSAE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.competenceSAE {
+    display: flex;
+}
+
+.saecomp {
+    display: flex;
+    flex-direction: column;
+}
+
+a.justifications {
+    background-color: #4DA4EA;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    transition: 1s ease;
+    margin-bottom: 20px;
+}
+
+a.justifications:hover {
+    background-color: #6cb5f1;
+    margin-top: 20px;
+}
+
+.acSAE {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.ressourceSAE {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+p.semestreSAE h3 div {
+    font-size: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+h3.hgroup div {
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+}

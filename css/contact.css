@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Kusanagi";
+    src: url(fonts/Kusanagi.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+}
+
+h1 {
+    font-family: "Kusanagi";
+    font-size: 35px;
+    color: white;
+}

@@ -1,3 +1,4 @@
+<!-- Initialisation de la page HTML -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,93 +6,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <title>Alex Eckes</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>ALEX ECKES</title>
 </head>
 
 <body>
-    <!-- INDEX -->
-    <section class="index">
+    <!-- For Matrix BG -->
+    <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+    <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
 
-        <div class="back-vid">
-            <video autoplay loop muted plays-inline class="back-vid">
-                <source src="./img/vid/back-vid-1.mp4" type="video/mp4">
-            </video>
+    <div class="back-vid">
+        <video autoplay loop muted plays-inline class="back-vid">
+            <source src="img/video/back-vid-1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- First Section Of The Website -->
+    <div class="enterwired">
+        <h1 class="enteranim">Enter The Wired</h1>
+
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </div>
 
-        <!-- HEADER -->
-        <header>
-            <nav class="nav header-flex">
-                <div class="nav-logo" data-aos="fade-left">
-                    <a href="index.html">AE.</a>
-                </div>
-
-                <div class="nav-menu" id="nav-menu">
-                    <ul class="nav-list">
-                        <li class="nav-item" data-aos="fade-up"><a href="index.html">INDEX</a></li>
-                        <li class="nav-item" data-aos="fade-up"><a href="#about">ABOUT</a></li>
-                        <li class="nav-item" data-aos="fade-up"><a href="#projects">PROJECTS</a></li>
-                        <li class="nav-item" data-aos="fade-up"><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-socials" data-aos="fade-right">
-                    <div class="nav-github">
-                        <a href="https://github.com/YxxgSxxl" target="_blank">
-                            <img src="img/github-mark-white.png" alt="GitHub-White-Logo">
-                        </a>
-                    </div>
-                    <div class="nav-linkedin">
-                        <a href="https://www.linkedin.com/in/alex-eckes/?locale=en_US" target="_blank">
-                            <img src="img/linkedin-mark-white.png" alt="GitHub-White-Logo">
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <div class="index-welcome">
-            <span class="glowtext">
-                <h1>WELCOME TO MY E-PORTFOLIO !</h1>
-            </span>
+    <!-- Second Section Of The Website -->
+    <div class="page_show">
+        <div id="sae">
+            <ul>
+                <li><a href="controleur/controleur.php" class="choice" id="sae">SAÉ</a></li>
+                <li><a href="about.html" class="choice">ABOUT</a></li>
+                <li><a href="contact.html" class="choice">CONTACT</a></li>
+            </ul>
         </div>
-    </section>
+    </div>
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
-        <div class="back-vid2">
-            <video autoplay loop muted plays-inline class="back-vid2">
-                <source src="./img/vid/back-vid-2.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <span class="glowtext">
-            <h2>DISCOVER ME !</h2>
-        </span>
-
-        <div class="about-desc">
-            <p>My name is Alex, I am a first year student at the University Of Mulhouse in Web Dev and Multimedia.</p>
-        </div>
-
-        <a href="./img/ECKES_Alex_CV.pdf" download="ECKES_CV"><button class="download-cv">DOWNLOAD MY CV</button></a>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="projects" id="projects">
-
-        <span class="glowtext">
-            <h3>My Projects</h3>
-        </span>
-
-
-    </section>
 
     <script src="js/index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,314 @@
+/* INIT */
+@font-face {
+    font-family: "Kusanagi";
+    src: url(fonts/Kusanagi.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Kusanagi";
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    width: 40px;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+
+    padding-left: 100px;
+    padding-right: 550px;
+}
+
+main div {
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Label for filter */
+label {
+    margin-right: 50px;
+    position: relative;
+
+    color: #000000;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* If label or input is checked */
+input:checked+label {
+    background-color: #4DA4EA;
+    color: white;
+}
+
+/* Hide Checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+/* Hide Radio */
+input[type=radio] {
+    visibility: hidden;
+}
+
+label:hover {
+    background-color: rgb(219, 251, 255);
+    cursor: pointer;
+}
+
+/* BACKGROUND VIDEO */
+.back-vid {
+    width: 100%;
+    height: 100vh;
+    opacity: 60%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+}
+
+.space {
+    margin-top: 30px;
+}
+
+/* Semester Filters */
+.zoneFiltresSem {
+    font-size: larger;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    height: 60px;
+
+    margin-left: 50px;
+    margin-bottom: 10px;
+
+    user-select: none;
+}
+
+/* SHOW SAE Box */
+.carousel-elements>a>.sae-box {
+    display: block;
+}
+
+/* HIDE SAE Box */
+.carousel-elements.s1>a>.sae-box.s1 {
+    display: none;
+}
+
+.carousel-elements.s2>a>.sae-box.s2 {
+    display: none;
+}
+
+/* Competences Filters */
+.zoneFiltresComp {
+    font-size: larger;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    height: 60px;
+
+    margin-left: 50px;
+    margin-bottom: 50px;
+
+    user-select: none;
+}
+
+/* HIDE SAE Boxes */
+.carousel-elements.Comprendre>a>.sae-box.Comprendre {
+    display: none;
+}
+
+.carousel-elements.Concevoir>a>.sae-box.Concevoir {
+    display: none;
+}
+
+.carousel-elements.Exprimer>a>.sae-box.Exprimer {
+    display: none;
+}
+
+.carousel-elements.Developper>a>.sae-box.Developper {
+    display: none;
+}
+
+.carousel-elements.Entreprendre>a>.sae-box.Entreprendre {
+    display: none;
+}
+
+/* Show page */
+.page_show {
+    margin-top: 50px;
+    color: white;
+
+    transform: scale(0);
+    transition: ease 1s;
+    transition-delay: 1s;
+    z-index: 2;
+
+    text-align: center;
+    align-items: center;
+}
+
+.show {
+    transform: scale(1);
+}
+
+/* Page Show Wrapper (CSS Grid) */
+.pageshow-wrapper {
+    display: flex;
+}
+
+.decode-text {
+    user-select: none;
+}
+
+/* Carousel show, slide and exec */
+.carousel {
+    width: 650px;
+    overflow: hidden;
+}
+
+.SAE {
+    display: flex;
+    flex-direction: column;
+    background-color: #4DA4EA;
+    padding: 30px;
+    transition: ease 0.5s;
+    user-select: none;
+    border-radius: 8%;
+}
+
+.SAE:hover {
+    background-color: #62b1f1;
+    cursor: pointer;
+}
+
+.carousel-slideR {
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.carousel-slideR:hover {
+    transform: translateX(10px);
+}
+
+.carousel-slideL {
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.carousel-slideL:hover {
+    transform: translateX(10px);
+}
+
+.carousel-addsae {
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.carousel-addsae:hover {
+    transform: translateY(-10px);
+}
+
+.carousel-elements {
+    display: flex;
+    gap: 50px;
+}
+
+.carousel-elements>.sae-box {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-content p {
+    color: black;
+    font-size: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comp-span{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 20px;
+}
