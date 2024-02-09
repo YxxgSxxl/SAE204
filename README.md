@@ -1,2 +1,2 @@
 # PortfolioSAE204
- A portfolio hosted on Vercel for a school project
+ A portfolio hosted at the UIT for a school project
